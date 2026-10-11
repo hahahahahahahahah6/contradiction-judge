@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contradiction-judge"
+version = "0.1.0"
+description = "Semantic contradiction detection for AI memory systems"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "hao li", email = "haoli5933@gmail.com" }]
+keywords = ["ai", "memory", "contradiction", "consistency", "agents"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []  # stdlib only
+
+[project.scripts]
+contradiction-judge = "contradiction_judge.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/contradiction-judge"
+Repository = "https://github.com/hahahahahahahahah6/contradiction-judge"
+
+[tool.setuptools.packages.find]
+where = ["src"]
